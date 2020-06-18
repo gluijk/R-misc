@@ -52,6 +52,4 @@ duplicated(dt)  # which rows are duplicated by all columns (eq. by=NULL)
 duplicated(dt, by="V1")  # which rows are duplicated by V1
 
 unique(dt)  # unique rows by all columns (eq. by=NULL)
-unique(dt, by="V1")  # unique rows by all columns
-
-
+unique(dt, by="V1")  # unique rows by V1
