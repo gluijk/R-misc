@@ -1,3 +1,4 @@
+# Rcpp tutorial: https://teuder.github.io/rcpp4everyone_en/index.html
 library(Rcpp)
 library(microbenchmark)
 
@@ -7,8 +8,8 @@ cppFunction('
             std::size_t n = x.size() / 2;
             std::nth_element(x.begin(), x.begin() + n, x.end());
             
-            // std::cout << "Original vector: " << xx << std::endl;
-            // std::cout << "Clone vector: " << x << std::endl;
+            // Rcout << "Median of {" << xx << "} is:" << std::endl;
+            std::cout << "Median of {" << xx << "} is:" << std::endl;
 
             if (x.size() % 2) return x[n]; 
             return (x[n] + *std::max_element(x.begin(), x.begin() + n)) / 2.;
