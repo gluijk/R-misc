@@ -9,7 +9,7 @@ cppFunction('
             std::nth_element(x.begin(), x.begin() + n, x.end());
             
             // Rcout << "Median of {" << xx << "} is:" << std::endl;
-            std::cout << "Median of {" << xx << "} is:" << std::endl;
+            // std::cout << "Median of {" << xx << "} is:" << std::endl;
 
             if (x.size() % 2) return x[n]; 
             return (x[n] + *std::max_element(x.begin(), x.begin() + n)) / 2.;
